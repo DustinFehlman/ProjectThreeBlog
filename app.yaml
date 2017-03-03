@@ -4,6 +4,9 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /public/css
+  static_dir: public/css
+
 - url: /.*
   script: python.app.app
 

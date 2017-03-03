@@ -3,5 +3,6 @@ from python import pages
 
 app = webapp2.WSGIApplication([
     ('/', pages.MainPage),
-    ('/post', pages.PostPage),
+    ('/newpost', pages.NewPost),
+    ('/([0-9]+)',pages.PostPage)
 ], debug=True)

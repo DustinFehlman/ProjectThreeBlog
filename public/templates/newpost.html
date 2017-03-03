@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Post Entry</title>
+    <link type="text/css" rel="stylesheet" href="/public/css/main.css">
 </head>
 <body>
+<a href="/">Blog Time</a>
 <h1>New Post</h1>
-<form method="post">
-  Subject
+<form method="post" id="new-post">
+    Subject
     <br>
-  <input type="text" name="subject">
-  <br>
-  Blog
+    <input class="blog-subject-input" type="text" name="subject">
     <br>
-  <input type="text" name="blog">
+    Blog
+    <br>
+    <textarea class="blog-input" form="new-post" name="blog"></textarea>
     <br>
     <input type="submit" value="Submit">
 </form>
+<h1>{{error}}</h1>
 </body>
 </html>
